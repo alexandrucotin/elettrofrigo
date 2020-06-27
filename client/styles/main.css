@@ -26,6 +26,33 @@ section {
   padding: 4rem;
 }
 
+.paragraph {
+  margin: 1rem 0;
+}
+
+.paragraph span {
+  font-weight: 600;
+  color: #fbb03f;
+}
+
+.list {
+  list-style-type: disc;
+  margin: 1rem 4rem;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -43,6 +70,8 @@ section {
   width: 100%;
   padding: 0.5rem 3.5rem;
   background-color: white;
+  -webkit-box-shadow: 10px 10px 30px #e7e7e7;
+          box-shadow: 10px 10px 30px #e7e7e7;
 }
 
 .navbar .logo {
@@ -128,26 +157,22 @@ section {
   color: white;
 }
 
-.container {
-  padding: 4rem;
-}
-
 .azienda {
-  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .azienda .azienda-illustration {
-  width: 20%;
+  width: 30%;
 }
 
 .azienda .azienda-illustration .illustration {
@@ -155,7 +180,7 @@ section {
 }
 
 .azienda .azienda-content {
-  width: 50%;
+  width: 40%;
 }
 
 .azienda .azienda-content .title {
@@ -167,38 +192,14 @@ section {
   color: #fbb03f;
 }
 
-.paragraph {
-  margin: 1rem 0;
-}
-
-.paragraph span {
-  font-weight: 600;
-  color: #fbb03f;
-}
-
-.list {
-  list-style-type: disc;
-  margin: 1rem 4rem;
-}
-
-.images-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: center;
-}
-
-.images-section .paragraph {
+.azienda .container-paragraph {
   width: 30%;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: lighter;
 }
 
-.images-section .images-container {
+.azienda .images-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,11 +209,11 @@ section {
   margin: 1rem;
 }
 
-.images-section .images-container img {
+.azienda .images-container img {
   margin: 0 0.5rem;
 }
 
-.images-section .images-container .vertical-imgs {
+.azienda .images-container .vertical-imgs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

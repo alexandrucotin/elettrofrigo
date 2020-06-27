@@ -4,6 +4,7 @@ $yellow: #fbb03f;
 $white: white;
 $light-blue: #76949f;
 
+// GENERAL
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +30,28 @@ section {
   padding: 4rem;
 }
 
+.paragraph {
+  margin: 1rem 0;
+
+  span {
+    font-weight: 600;
+    color: $yellow;
+  }
+}
+
+.list {
+  list-style-type: disc;
+  margin: 1rem 4rem;
+}
+
+.row{
+  display: flex;
+  margin: 8rem 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+// NAVBAR
 .navbar {
   position: sticky;
   height: 10vh;
@@ -39,6 +62,7 @@ section {
   width: 100%;
   padding: 0.5rem 3.5rem;
   background-color: white;
+  box-shadow: 10px 10px 30px #e7e7e7;
 
   .logo {
     width: 35%;
@@ -62,6 +86,8 @@ section {
     }
   }
 }
+
+// VIDEO FULLSCREEN
 .video-container {
   padding: 0;
   background-color: black;
@@ -112,19 +138,15 @@ section {
   }
 }
 
-.container {
-  padding: 4rem;
-}
-
+// AZIENDA SECTION
 .azienda {
-  height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
 
   .azienda-illustration {
-    width: 20%;
+    width: 30%;
 
     .illustration {
       width: 100%;
@@ -132,7 +154,7 @@ section {
   }
 
   .azienda-content {
-    width: 50%;
+    width: 40%;
 
     .title {
       font-size: 3.5rem;
@@ -142,31 +164,14 @@ section {
       }
     }
   }
-}
 
-.paragraph {
-  margin: 1rem 0;
-
-  span {
-    font-weight: 600;
-    color: $yellow;
-  }
-}
-
-.list {
-  list-style-type: disc;
-  margin: 1rem 4rem;
-}
-
-.images-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-
-  .paragraph {
+  .container-paragraph{
     width: 30%;
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: lighter;
   }
+
   .images-container {
     display: flex;
     justify-content: center;
