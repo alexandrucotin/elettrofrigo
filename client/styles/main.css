@@ -11,7 +11,6 @@ h1 h2 h3 h4 h5 h6 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
 }
 
 a {
@@ -23,10 +22,14 @@ ul {
   list-style: none;
 }
 
+section {
+  padding: 4rem;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
-  height: 7vh;
+  height: 10vh;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +41,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 3.5rem;
   background-color: white;
 }
 
@@ -65,7 +68,8 @@ ul {
 }
 
 .video-container {
-  height: 93vh;
+  background-color: black;
+  height: 90vh;
 }
 
 .video-container #myVideo {
@@ -124,5 +128,49 @@ ul {
 
 .container {
   padding: 4rem;
+}
+
+.azienda {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.azienda .azienda-illustration {
+  width: 20%;
+}
+
+.azienda .azienda-illustration .illustration {
+  width: 100%;
+}
+
+.azienda .azienda-content {
+  width: 50%;
+}
+
+.azienda .azienda-content .title {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.azienda .azienda-content .title span {
+  color: #fbb03f;
+}
+
+.azienda .azienda-content .paragraph {
+  margin: 1rem 0;
+}
+
+.azienda .azienda-content .paragraph span {
+  font-weight: 600;
+  color: #fbb03f;
 }
 /*# sourceMappingURL=main.css.map */
