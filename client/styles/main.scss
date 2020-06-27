@@ -69,7 +69,7 @@ section {
   overflow: hidden;
 
   #myVideo {
-    width: 100%
+    width: 100%;
   }
 
   .video-overlay {
@@ -101,12 +101,13 @@ section {
 
     .button-link {
       margin-top: 2rem;
-      background-color: $yellow;
+      background-color: $light-blue;
       border-radius: 50px;
       padding: 0.5rem;
       text-align: center;
       font-weight: 600;
       width: 20%;
+      color: white;
     }
   }
 }
@@ -133,21 +134,51 @@ section {
   .azienda-content {
     width: 50%;
 
-    .title{
+    .title {
       font-size: 3.5rem;
       margin: 2rem 0;
-      span{
+      span {
         color: $yellow;
       }
     }
+  }
+}
 
-    .paragraph{
-      margin: 1rem 0;
+.paragraph {
+  margin: 1rem 0;
 
-      span{
-        font-weight: 600;
-        color: $yellow
-      }
+  span {
+    font-weight: 600;
+    color: $yellow;
+  }
+}
+
+.list {
+  list-style-type: disc;
+  margin: 1rem 4rem;
+}
+
+.images-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+
+  .paragraph {
+    width: 30%;
+  }
+  .images-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+
+    img {
+      margin: 0 0.5rem;
+    }
+    .vertical-imgs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }

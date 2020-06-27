@@ -119,12 +119,13 @@ section {
 
 .video-container .video-overlay .button-link {
   margin-top: 2rem;
-  background-color: #fbb03f;
+  background-color: #76949f;
   border-radius: 50px;
   padding: 0.5rem;
   text-align: center;
   font-weight: 600;
   width: 20%;
+  color: white;
 }
 
 .container {
@@ -166,12 +167,61 @@ section {
   color: #fbb03f;
 }
 
-.azienda .azienda-content .paragraph {
+.paragraph {
   margin: 1rem 0;
 }
 
-.azienda .azienda-content .paragraph span {
+.paragraph span {
   font-weight: 600;
   color: #fbb03f;
+}
+
+.list {
+  list-style-type: disc;
+  margin: 1rem 4rem;
+}
+
+.images-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.images-section .paragraph {
+  width: 30%;
+}
+
+.images-section .images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.images-section .images-container img {
+  margin: 0 0.5rem;
+}
+
+.images-section .images-container .vertical-imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
