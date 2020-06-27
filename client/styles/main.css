@@ -53,6 +53,15 @@ section {
           align-items: center;
 }
 
+select {
+  border: none;
+  padding: 1rem;
+  background-color: #76949f;
+  border-radius: 50px;
+  color: white;
+  width: auto;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;

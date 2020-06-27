@@ -51,6 +51,15 @@ section {
   align-items: center;
 }
 
+select{
+  border: none;
+  padding: 1rem;
+  background-color: $light-blue;
+  border-radius: 50px;
+  color: white;
+  width: auto;
+}
+
 // NAVBAR
 .navbar {
   position: sticky;
