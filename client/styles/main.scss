@@ -313,3 +313,23 @@ select {
     font-size: 11px;
   }
 }
+
+
+// FOOTER
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow;
+  padding: 4rem;
+
+
+  .footer-text{
+    color: white;
+
+    span{
+      font-weight: bold;
+    }
+  }
+}
