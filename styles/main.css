@@ -43,12 +43,12 @@ section .section-content {
   width: 40%;
 }
 
-section .section-content .title {
+.title {
   font-size: 3.5rem;
   margin: 2rem 0;
 }
 
-section .section-content .title span {
+.title span {
   color: #fbb03f;
 }
 
@@ -70,13 +70,9 @@ section .section-content .title span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 4rem 0;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .reverse {
@@ -256,6 +252,9 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .servizi .servizi-offerti {
@@ -301,6 +300,47 @@ select {
 
 .servizi .servizi-offerti .impianti-condizionamento {
   background-image: url("../imgs/azienda4.jpg");
+}
+
+.qualita {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.qualita .certificazioni-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.qualita .partners-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.qualita .section-illustration {
+  width: 20%;
 }
 
 footer {

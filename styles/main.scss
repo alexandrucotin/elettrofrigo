@@ -42,14 +42,14 @@ section {
 
   .section-content {
     width: 40%;
+  }
+}
 
-    .title {
-      font-size: 3.5rem;
-      margin: 2rem 0;
-      span {
-        color: $yellow;
-      }
-    }
+.title {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  span {
+    color: $yellow;
   }
 }
 
@@ -69,9 +69,7 @@ section {
 
 .row {
   display: flex;
-  margin: 4rem 0;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .reverse {
@@ -223,6 +221,7 @@ select {
 
 .servizi {
   flex-direction: column;
+  justify-content: center;
 
   .servizi-offerti {
     margin-top: 4rem;
@@ -257,6 +256,28 @@ select {
       background-image: url("../imgs/azienda4.jpg");
     }
   }
+}
+
+// QUALITA'
+
+.qualita {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .certificazioni-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .partners-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .section-illustration {
+    width: 20%;
+}
 }
 
 // FOOTER
