@@ -41,14 +41,14 @@
       <ul class="links-list">
         <li class="link-item"><a href="#home">home</a></li>
         <li class="link-item"><a href="#azienda">azienda</a></li>
-        <li class="link-item"><a href="#servzi">Servzi</a></li>
+        <li class="link-item"><a href="#servizi">servzi</a></li>
         <li class="link-item"><a href="#partners">partners</a></li>
         <li class="link-item"><a href="#contatti">contatti</a></li>
       </ul>
     </nav>
     <section class="azienda" id="azienda">
       <div class="row">
-        <div class="azienda-content">
+        <div class="section-content">
           <h1 class="title"><span>A</span>zienda</h1>
           <p class="paragraph">
             Elettrofrigo srl nasce nel 1980 a Verona, in questo tempo ha
@@ -69,7 +69,7 @@
             <li>supervisione generale della macchina</li>
           </ul>
         </div>
-        <div class="azienda-illustration">
+        <div class="section-illustration">
           <img
             class="illustration"
             src="./imgs/illustrations/undraw_my_current_location_om7g.svg"
@@ -77,29 +77,12 @@
           />
         </div>
       </div>
-      <div class="row reverse">
-        <div class="container-paragraph">
-          <p class="paragraph">
-            <span>Elettrofrigo</span> srl per una maggiore
-            attenzione/soddisfazione verso il cliente finale ha diviso la
-            propria attività in tre distinti gruppi, ognuno dei quali lavora in
-            autonomia per fornire sempre maggiori e più avanzate soluzioni nel
-            proprio rispettivo settore di competenza.
-          </p>
-        </div>
-        <div class="images-container">
-          <img src="./imgs/azienda1.jpg" alt="" />
-          <img src="./imgs/azienda2.jpg" alt="" />
-          <div class="vertical-imgs">
-            <img src="./imgs/azienda3.jpg" alt="" />
-            <img src="./imgs/azienda4.jpg" alt="" />
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="azienda" id="quadri">
+
+    <div class="parallax-1"></div>
+    <section class="servizi" id="servizi">
       <div class="row">
-        <div class="azienda-content">
+        <div class="section-content">
           <h1 class="title"><span>S</span>ervizi</h1>
           <p class="paragraph">
             Elettrofrigo srl progetta, sviluppa e propone soluzioni altamente
@@ -108,7 +91,7 @@
             Industriali
           </p>
         </div>
-        <div class="azienda-illustration">
+        <div class="section-illustration">
           <img
             class="illustration"
             src="./imgs/illustrations/undraw_services_5tv9.svg"
@@ -116,43 +99,28 @@
           />
         </div>
       </div>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img
-            src="https://lh3.googleusercontent.com/proxy/7_gaSc_tE8xUoRbWajrAISEQX65kFChhytB_zSphXGjCB_oUkbFp9uscNn0x1MC2XhIRRJjFOgRn2W9C_GN2QfRRIjmOnFr84RIr_lUXt99ANEXETSKWXIuc0XVKf0ZjOv4"
-            style="width: 100%;"
-          />
-          <div class="text">Caption Text</div>
+
+      <div class="servizi-offerti">
+        <div class="round-item automazione-industriale">
+          <img class="thumbnail" src="./imgs/azienda1.jpg" alt="" /><a href=""
+            >automazione industriale</a
+          >
         </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img
-            src="https://www.elettra.it/MTF//Content/about_us/quadri__6690817287763968273.jpg"
-            style="width: 100%;"
-          />
-          <div class="text">Caption Two</div>
+        <div class="round-item impianti-elettrici">
+          <img class="thumbnail" src="./imgs/azienda2.jpg" alt="" /><a href=""
+            >impianti elettrici</a
+          >
         </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img
-            src="https://i0.wp.com/meleamspa.com/wp-content/uploads/2019/07/quadri2.jpg?fit=1024%2C768&ssl=1"
-            style="width: 100%;"
-          />
-          <div class="text">Caption Three</div>
+        <div class="round-item quadri-elettrici">
+          <img class="thumbnail" src="./imgs/azienda3.jpg" alt="" /><a href=""
+            >quadri elettrici</a
+          >
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-
-      <div style="text-align: center;">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="round-item impianti-condizionamento">
+          <img class="thumbnail" src="/imgs/azienda4.jpg" alt="" /><a href=""
+            >impianti di condizionamento</a
+          >
+        </div>
       </div>
     </section>
     <section class="azienda">
@@ -180,6 +148,5 @@
         <span>Alexandru Cotin</span>
       </p>
     </footer>
-    <script src="./js/slideshow.js"></script>
   </body>
 </html>

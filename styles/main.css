@@ -24,6 +24,32 @@ ul {
 
 section {
   padding: 4rem;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .section-illustration {
+  width: 30%;
+}
+
+section .section-illustration .illustration {
+  width: 100%;
+}
+
+section .section-content {
+  width: 40%;
+}
+
+section .section-content .title {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+section .section-content .title span {
+  color: #fbb03f;
 }
 
 .paragraph {
@@ -68,6 +94,19 @@ select {
   color: white;
   width: auto;
   -webkit-appearance: menulist-button;
+}
+
+.parallax-1 {
+  width: 100%;
+  height: 35vh;
+  /* The image used */
+  background-image: url("../imgs/parallax/DSC05185.jpg");
+  /* Full height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -179,7 +218,33 @@ select {
 }
 
 .azienda {
-  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servizi {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.servizi .servizi-offerti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.servizi .servizi-offerti .round-item {
+  width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,172 +257,14 @@ select {
           align-items: center;
 }
 
-.azienda .azienda-illustration {
-  width: 30%;
-}
-
-.azienda .azienda-illustration .illustration {
-  width: 100%;
-}
-
-.azienda .azienda-content {
-  width: 40%;
-}
-
-.azienda .azienda-content .title {
-  font-size: 3.5rem;
-  margin: 2rem 0;
-}
-
-.azienda .azienda-content .title span {
-  color: #fbb03f;
-}
-
-.azienda .container-paragraph {
-  width: 30%;
-  text-align: center;
-  line-height: 1.5rem;
-  font-weight: lighter;
-}
-
-.azienda .images-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem;
-}
-
-.azienda .images-container img {
-  margin: 0 0.5rem;
-}
-
-.azienda .images-container .vertical-imgs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+.servizi .servizi-offerti .round-item .thumbnail {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
+.servizi .servizi-offerti .round-item a {
+  margin-top: 1rem;
 }
 
 footer {
