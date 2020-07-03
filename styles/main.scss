@@ -284,7 +284,8 @@ select {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: $yellow;
   padding: 4rem;
@@ -295,5 +296,11 @@ footer {
     span {
       font-weight: bold;
     }
+  }
+
+  .footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
