@@ -104,8 +104,7 @@ select {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 41px 15px #ffffff,
-  inset 0px -41px 20px #ffffff;
+  box-shadow: inset 0px 41px 15px #ffffff, inset 0px -41px 20px #ffffff;
 }
 
 .thumbnail {
@@ -255,7 +254,7 @@ select {
   }
 }
 
-// QUALITA'
+// PARTNERS
 
 .partners {
   flex-direction: column;
@@ -274,6 +273,45 @@ select {
       width: 17%;
       .logo {
         width: 100%;
+      }
+    }
+  }
+}
+
+// CONTATTACI
+
+.contattaci {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    width: 50%;
+    .form-group {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin: 0 0 0.7rem 0.6rem;
+        font-weight: lighter;
+        font-size: 0.7rem;
+
+      }
+
+      input {
+        border: 0;
+        background-color: lightgrey;
+        border-radius: 50px;
+        padding: 0.7rem;
+      }
+
+      textarea {
+        border: 0;
+        background-color: lightgrey;
+        border-radius: 50px;
+        padding: 0.7rem;
       }
     }
   }

@@ -339,6 +339,57 @@ select {
   width: 100%;
 }
 
+.contattaci {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contattaci form {
+  width: 50%;
+}
+
+.contattaci form .form-group {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contattaci form .form-group label {
+  margin: 0 0 0.7rem 0.6rem;
+  font-weight: lighter;
+  font-size: 0.7rem;
+}
+
+.contattaci form .form-group input {
+  border: 0;
+  background-color: lightgrey;
+  border-radius: 50px;
+  padding: 0.7rem;
+}
+
+.contattaci form .form-group textarea {
+  border: 0;
+  background-color: lightgrey;
+  border-radius: 50px;
+  padding: 0.7rem;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
