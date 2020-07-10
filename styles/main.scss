@@ -288,6 +288,16 @@ select {
 
   form {
     width: 50%;
+
+    .row-form-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .form-group {
+        width: 47%;
+      }
+    }
     .form-group {
       margin: 1rem 0;
       display: flex;
@@ -297,23 +307,31 @@ select {
         margin: 0 0 0.7rem 0.6rem;
         font-weight: lighter;
         font-size: 0.7rem;
-
       }
 
       input {
         border: 0;
-        background-color: lightgrey;
+        box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
         border-radius: 50px;
         padding: 0.7rem;
       }
 
       textarea {
         border: 0;
-        background-color: lightgrey;
+        box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
         border-radius: 50px;
         padding: 0.7rem;
       }
     }
+  }
+
+  button{
+    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    border: 0;
+    background-color: $dark-blue;
   }
 }
 
