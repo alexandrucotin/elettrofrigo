@@ -16,21 +16,22 @@
 
     <div class="video-container" id="home">
       <video autoplay muted loop class="video-tag" id="myVideo">
-        <source src="./video/finishedScirocco.mp4" type="video/mp4" />
+        <source src="./video/render_draft_1.mp4" type="video/mp4" />
       </video>
       <div class="video-overlay">
-        <img src="./imgs/smallLogo.png" alt="Elettrofrigo logo piccolo" />
-        <div class="overlay-content">
-          <h4 class="overlay-title">Elettrofrigo</h4>
-          <p class="overlay-subtitle">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
-            itaque excepturi rerum dolorem officiis quam, nam mollitia labore,
-            dicta fugit aut! Id neque eos rem reiciendis recusandae error
-            aliquid porro.
-          </p>
-          <div class="buttons-container">
-            <a href="#quadri" class="button-link">La nostra storia</a>
-            <a href="#quadri" class="button-link">I nostri servizi</a>
+        <div class="overlay-total">
+          <img src="./imgs/smallLogo.png" alt="Elettrofrigo logo piccolo" />
+          <div class="overlay-content">
+            <h4 class="overlay-title">Elettrofrigo</h4>
+            <p class="overlay-subtitle">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Veritatis itaque excepturi rerum dolorem officiis quam, nam
+              mollitia labore, dicta fugit aut! Id neque eos rem reiciendis
+              recusandae error aliquid porro.
+            </p>
+            <div class="buttons-container">
+              <a href="#servizi" class="button-link">Scopri di piu'</a>
+            </div>
           </div>
         </div>
       </div>
@@ -46,10 +47,12 @@
           alt="logo azienda elettrofrigo"
       /></a>
       <ul class="links-list">
-        <li class="link-item"><a href="#home">home</a></li>
-        <li class="link-item"><a href="#azienda">azienda</a></li>
-        <li class="link-item"><a href="#servizi">servzi</a></li>
+        <li class="link-item">
+          <a class="hover hover-1" href="#home">home</a>
+        </li>
+        <li class="link-item"><a href="#servizi">servizi</a></li>
         <li class="link-item"><a href="#partners">partners</a></li>
+        <li class="link-item"><a href="#azienda">azienda</a></li>
         <li class="link-item"><a href="#contatti">contatti</a></li>
       </ul>
     </nav>
@@ -176,7 +179,7 @@
 
     <div class="parallax-1"></div>
 
-    <section class="contattaci" id="contattaci">
+    <section class="contattaci" id="contatti">
       <h1 class="title"><span>C</span>ontattaci</h1>
       <form action="">
         <div class="row-form-group">
@@ -207,7 +210,9 @@
       <div class="footer-content">
         <div class="links">
           <ul>
-            <li class="link-item"><a href="#home">home</a></li>
+            <li class="link-item">
+              <a href="#home"><span class="hover-1">home</span> </a>
+            </li>
             <li class="link-item"><a href="#azienda">azienda</a></li>
             <li class="link-item"><a href="#servizi">servzi</a></li>
             <li class="link-item"><a href="#qualita">qualita'</a></li>
@@ -235,4 +240,5 @@
       </p>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 </html>
