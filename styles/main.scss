@@ -6,6 +6,10 @@ $light-blue: #76949f;
 
 $animate: all 0.2s ease-in-out;
 
+html {
+  scroll-behavior: smooth;
+}
+
 // GENERAL
 * {
   margin: 0;
@@ -18,6 +22,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
 a {
@@ -34,58 +39,17 @@ section {
   width: 100%;
   display: flex;
 
-  .section-illustration {
+  .section-illustrazione {
     width: 30%;
 
-    .illustration {
+    .illustrazione {
       width: 100%;
     }
   }
 
-  .section-content {
+  .section-contenuto {
     width: 40%;
   }
-}
-
-.title {
-  font-size: 3.5rem;
-  margin: 2rem 0;
-  span {
-    color: $yellow;
-  }
-}
-
-.paragraph {
-  margin: 1rem 0;
-
-  span {
-    font-weight: 600;
-    color: $yellow;
-  }
-}
-
-.list {
-  list-style-type: disc;
-  margin: 1rem 4rem;
-}
-
-.row {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
-select {
-  border: none;
-  padding: 1rem;
-  background-color: $light-blue;
-  border-radius: 50px;
-  color: white;
-  width: auto;
-  -webkit-appearance: menulist-button;
 }
 
 .parallax-1 {
@@ -119,9 +83,10 @@ select {
 
 // NAVBAR
 .navbar {
+  z-index: 1;
   position: sticky;
   height: 10vh;
-  top: -1px;
+  top: 89px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,10 +143,11 @@ select {
 // VIDEO FULLSCREEN
 .video-container {
   background-color: black;
-  height: 90vh;
+  height: 100vh;
+  overflow-y: hidden;
 
   #myVideo {
-    width:100%;
+    width: 100%;
   }
 
   .video-overlay {
@@ -190,13 +156,14 @@ select {
     align-items: flex-end;
     color: white;
     top: 0;
-    height: 90%;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
 
     .overlay-total {
       display: flex;
       align-items: center;
-      margin: 0 0 3rem 3rem;
+      left: -10px;
+      opacity: 0;
     }
 
     .overlay-content {
@@ -227,22 +194,32 @@ select {
       }
     }
   }
-
-
-}
-
-// AZIENDA SECTION
-.azienda {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 // SERVIZI SECTION
 
 .servizi {
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .servizi-titolo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    span {
+      font-size: 5rem;
+      font-weight: 600;
+      color: $dark-blue;
+    }
+  }
+
+  .servizi-paragrafo-descrittivo {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin: 1rem 0;
+    span {
+      color: $yellow;
+    }
+  }
 
   .servizi-offerti {
     margin-top: 4rem;
@@ -263,19 +240,19 @@ select {
     }
 
     .automazione-industriale {
-      background-image: url("../imgs/azienda1.jpg");
+      background-image: url("../imgs/DSC07176.jpg");
     }
 
     .impianti-elettrici {
-      background-image: url("../imgs/azienda2.jpg");
+      background-image: url("../imgs/DSC07180.jpg");
     }
 
     .quadri-elettrici {
-      background-image: url("../imgs/azienda3.jpg");
+      background-image: url("../imgs/DSC07208.jpg");
     }
 
     .impianti-condizionamento {
-      background-image: url("../imgs/azienda4.jpg");
+      background-image: url("../imgs/DSC07236.jpg");
     }
   }
 }
@@ -289,6 +266,29 @@ select {
   .partners-text {
     text-align: center;
     width: 50%;
+    .partners-titolo {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      span {
+        font-size: 5rem;
+        font-weight: 600;
+        color: $dark-blue;
+      }
+    }
+    .partners-paragrafo-descrittivo {
+      font-weight: lighter;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+  }
+
+  .certificazioni {
+    margin-top: 2rem;
+    .certificazioni-paragrafo-descrittivo {
+      font-weight: lighter;
+      font-size: 0.8rem;
+      margin: 0.5rem 0;
+    }
   }
   .partners-logo {
     display: flex;
@@ -304,16 +304,47 @@ select {
   }
 }
 
+// AZIENDA SECTION
+.azienda {
+  align-items: center;
+  justify-content: space-evenly;
+  .azienda-titolo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    span {
+      font-size: 5rem;
+      font-weight: 600;
+      color: $dark-blue;
+    }
+  }
+  .azienda-paragrafo-descrittivo {
+    font-weight: lighter;
+    font-size: 1rem;
+    margin: 1rem 0;
+    span {
+      color: $yellow;
+    }
+  }
+}
+
 // CONTATTACI
 
 .contattaci {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
+  .contattaci-titolo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    span {
+      font-size: 5rem;
+      font-weight: 600;
+      color: $dark-blue;
+    }
+  }
+
   form {
-    width: 50%;
 
     .row-form-group {
       display: flex;
@@ -336,16 +367,16 @@ select {
       }
 
       input {
-        border: 0;
-        box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-        border-radius: 50px;
+        border:0;
+        border-bottom: 1px solid $dark-blue;
+        border-radius: 10px;
         padding: 0.7rem;
       }
 
       textarea {
         border: 0;
-        box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-        border-radius: 50px;
+        border-bottom: 1px solid $dark-blue;
+        border-radius: 10px;
         padding: 0.7rem;
       }
     }

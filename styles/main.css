@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -31,65 +36,16 @@ section {
   display: flex;
 }
 
-section .section-illustration {
+section .section-illustrazione {
   width: 30%;
 }
 
-section .section-illustration .illustration {
+section .section-illustrazione .illustrazione {
   width: 100%;
 }
 
-section .section-content {
+section .section-contenuto {
   width: 40%;
-}
-
-.title {
-  font-size: 3.5rem;
-  margin: 2rem 0;
-}
-
-.title span {
-  color: #fbb03f;
-}
-
-.paragraph {
-  margin: 1rem 0;
-}
-
-.paragraph span {
-  font-weight: 600;
-  color: #fbb03f;
-}
-
-.list {
-  list-style-type: disc;
-  margin: 1rem 4rem;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-select {
-  border: none;
-  padding: 1rem;
-  background-color: #76949f;
-  border-radius: 50px;
-  color: white;
-  width: auto;
-  -webkit-appearance: menulist-button;
 }
 
 .parallax-1 {
@@ -122,10 +78,11 @@ select {
 }
 
 .navbar {
+  z-index: 1;
   position: -webkit-sticky;
   position: sticky;
   height: 10vh;
-  top: -1px;
+  top: 89px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +150,8 @@ select {
 
 .video-container {
   background-color: black;
-  height: 90vh;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .video-container #myVideo {
@@ -210,8 +168,8 @@ select {
           align-items: flex-end;
   color: white;
   top: 0;
-  height: 90%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .video-container .video-overlay .overlay-total {
@@ -221,7 +179,8 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 3rem 3rem;
+  left: -10px;
+  opacity: 0;
 }
 
 .video-container .video-overlay .overlay-content {
@@ -258,27 +217,34 @@ select {
   color: white;
 }
 
-.azienda {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.servizi {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.servizi {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.servizi .servizi-titolo {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.servizi .servizi-titolo span {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #164469;
+}
+
+.servizi .servizi-paragrafo-descrittivo {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.servizi .servizi-paragrafo-descrittivo span {
+  color: #fbb03f;
 }
 
 .servizi .servizi-offerti {
@@ -312,19 +278,19 @@ select {
 }
 
 .servizi .servizi-offerti .automazione-industriale {
-  background-image: url("../imgs/azienda1.jpg");
+  background-image: url("../imgs/DSC07176.jpg");
 }
 
 .servizi .servizi-offerti .impianti-elettrici {
-  background-image: url("../imgs/azienda2.jpg");
+  background-image: url("../imgs/DSC07180.jpg");
 }
 
 .servizi .servizi-offerti .quadri-elettrici {
-  background-image: url("../imgs/azienda3.jpg");
+  background-image: url("../imgs/DSC07208.jpg");
 }
 
 .servizi .servizi-offerti .impianti-condizionamento {
-  background-image: url("../imgs/azienda4.jpg");
+  background-image: url("../imgs/DSC07236.jpg");
 }
 
 .partners {
@@ -343,6 +309,33 @@ select {
 .partners .partners-text {
   text-align: center;
   width: 50%;
+}
+
+.partners .partners-text .partners-titolo {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.partners .partners-text .partners-titolo span {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #164469;
+}
+
+.partners .partners-text .partners-paragrafo-descrittivo {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.partners .certificazioni {
+  margin-top: 2rem;
+}
+
+.partners .certificazioni .certificazioni-paragrafo-descrittivo {
+  font-weight: lighter;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
 }
 
 .partners .partners-logo {
@@ -365,24 +358,57 @@ select {
   width: 100%;
 }
 
+.azienda {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.azienda .azienda-titolo {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.azienda .azienda-titolo span {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #164469;
+}
+
+.azienda .azienda-paragrafo-descrittivo {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.azienda .azienda-paragrafo-descrittivo span {
+  color: #fbb03f;
+}
+
 .contattaci {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.contattaci form {
-  width: 50%;
+.contattaci .contattaci-titolo {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contattaci .contattaci-titolo span {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #164469;
 }
 
 .contattaci form .row-form-group {
@@ -419,17 +445,15 @@ select {
 
 .contattaci form .form-group input {
   border: 0;
-  -webkit-box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-          box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-  border-radius: 50px;
+  border-bottom: 1px solid #164469;
+  border-radius: 10px;
   padding: 0.7rem;
 }
 
 .contattaci form .form-group textarea {
   border: 0;
-  -webkit-box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-          box-shadow: inset 7px 7px 14px #d6d6d6, inset -7px -7px 14px #ffffff;
-  border-radius: 50px;
+  border-bottom: 1px solid #164469;
+  border-radius: 10px;
   padding: 0.7rem;
 }
 
