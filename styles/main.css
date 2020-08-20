@@ -9,13 +9,18 @@ html {
           box-sizing: border-box;
 }
 
-h1 h2 h3 h4 h5 h6 {
-  font-family: "Roboto", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
   overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -239,7 +244,7 @@ section .section-contenuto {
 
 .servizi .servizi-paragrafo-descrittivo {
   font-weight: lighter;
-  font-size: 1rem;
+  line-height: 1.6rem;
   margin: 1rem 0;
 }
 
@@ -380,12 +385,8 @@ section .section-contenuto {
 
 .azienda .azienda-paragrafo-descrittivo {
   font-weight: lighter;
-  font-size: 1rem;
+  line-height: 1.6rem;
   margin: 1rem 0;
-}
-
-.azienda .azienda-paragrafo-descrittivo span {
-  color: #fbb03f;
 }
 
 .contattaci {
@@ -464,6 +465,64 @@ section .section-contenuto {
   color: white;
   border: 0;
   background-color: #164469;
+}
+
+.header-categoria {
+  width: 100%;
+  padding: 6rem 4rem;
+  -webkit-box-shadow: 1px 5px 20px rgba(122, 122, 122, 0.5);
+          box-shadow: 1px 5px 20px rgba(122, 122, 122, 0.5);
+}
+
+.header-categoria .titolo-categoria {
+  color: #164469;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header-categoria .linea-categoria {
+  width: 10%;
+  background-color: #fbb03f;
+  height: 0.3rem;
+}
+
+.lavoro {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lavoro .lavoro-contenuto {
+  width: 50%;
+}
+
+.lavoro .lavoro-contenuto .lavoro-titolo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.lavoro .lavoro-contenuto .lavoro-titolo span {
+  font-size: 3rem;
+  color: #fbb03f;
+}
+
+.lavoro .lavoro-contenuto .lavoro-paragrafo-descrittivo {
+  font-weight: lighter;
+  font-size: 1rem;
+  margin: 0 0 3rem 0;
+}
+
+.lavoro .slideshow-lavoro {
+  width: 60%;
+}
+
+.lavoro .slideshow-lavoro .slideshow-container img {
+  width: 100%;
 }
 
 footer {
