@@ -4,3 +4,4 @@ var size = {
 };
 document.getElementById("myVideo").style.width = size.width;
 document.getElementById("myVideo").style.height = size.height;
+

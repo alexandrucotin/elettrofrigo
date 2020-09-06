@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="header-categoria">
@@ -25,11 +29,29 @@
           dignissimos. Enim sunt iste voluptatibus.
         </p>
       </div>
-      <div class="slideshow-lavoro">
-        <div class="slideshow-container">
-          <img class="img" src="../imgs/DSC07208.jpg" alt="" />
+      <!-- Slider main container -->
+      <div class="swiper-container slideshow-lavoro">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper slideshow-container">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="../imgs/DSC07176.jpg" /></div>
+          <div class="swiper-slide"><img src="../imgs/DSC07236.jpg" /></div>
+          <div class="swiper-slide"><img src="../imgs/DSC07176.jpg" /></div>
+          ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
   </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper(".swiper-container", {
+    effect:"coverflow",
+  });
+  </script>
 </html>
