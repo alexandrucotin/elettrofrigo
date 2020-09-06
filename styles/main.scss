@@ -154,7 +154,7 @@ section {
 .video-container {
   background-color: black;
   height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
 
   #myVideo {
     min-width: 100%;
