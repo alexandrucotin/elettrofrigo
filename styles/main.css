@@ -160,8 +160,8 @@ section .section-contenuto {
 }
 
 .video-container #myVideo {
-  width: auto;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .video-container .video-overlay {
@@ -175,6 +175,7 @@ section .section-contenuto {
   color: white;
   top: 0;
   height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
