@@ -21,8 +21,7 @@ const serviziScene = new ScrollMagic.Scene({
   .addTo(controller);
 
 serviziTimeline.from(".servizi-titolo", {
-  delay: 0.3,
-  duration: 1,
+  duration: 0.5,
   opacity: 0,
   height: 0,
 });
@@ -45,8 +44,7 @@ const partnersScene = new ScrollMagic.Scene({
   .addTo(controller);
 
 partnersTimeline.from(".partners-titolo", {
-  duration: 1,
-  delay: 0.3,
+  duration: 0.5,
   opacity: 0,
 });
 partnersTimeline.from(".partners-paragrafo-descrittivo", {
@@ -69,8 +67,7 @@ const aziendaScene = new ScrollMagic.Scene({
   .addTo(controller);
 
 aziendaTimeline.from(".azienda-titolo", {
-  delay: 0.3,
-  duration: 1,
+  duration: 0.5,
   height: 0,
   opacity:0
 });
