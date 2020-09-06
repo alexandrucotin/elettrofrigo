@@ -160,7 +160,8 @@ section .section-contenuto {
 }
 
 .video-container #myVideo {
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .video-container .video-overlay {

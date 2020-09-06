@@ -152,7 +152,8 @@ section {
   overflow-y: hidden;
 
   #myVideo {
-    width: 100%;
+    width: auto;
+    height: 100%;
   }
 
   .video-overlay {
