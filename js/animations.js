@@ -9,7 +9,7 @@ var contattiTimeline = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 // VIDEO
-videoTimeline.to(".navbar", { duration: 0.5, top: "-10vh", ease: "power1" });
+videoTimeline.to(".navbar", { duration: 0.5, y: "-10vh", ease: "power1" });
 videoTimeline.set(".overlay-total", { y: -150 });
 videoTimeline.to(".overlay-total", { duration: 1, x: 40, opacity: 1 });
 
