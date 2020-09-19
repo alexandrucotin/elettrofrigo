@@ -19,8 +19,12 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3 shadow">
-      <a class="navbar-brand" href="#"><img class="img-logo" src="./imgs/longLogo.png" alt=""></a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3 shadow"
+    >
+      <a class="navbar-brand" href="#"
+        ><img class="img-logo" src="./imgs/longLogo.png" alt=""
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -46,10 +50,10 @@
             <a class="nav-link" href="#partners">Partners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Azienda</a>
+            <a class="nav-link" href="#azienda">Azienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
+            <a class="nav-link" href="#contattaci">Contattaci</a>
           </li>
         </ul>
       </div>
@@ -73,10 +77,13 @@
           facilis maxime, corporis excepturi, magnam, ad error. Fugiat provident
           placeat sint dolores mollitia.
         </p>
-        <button class="btn btn-primary text-light mb-5 mt-2">Scopri di piu</button>
+        <button class="btn btn-primary text-light mb-5 mt-2">
+          Scopri di piu
+        </button>
       </div>
     </section>
 
+    <!-- SERVIZI -->
     <section class="height-100vh container-fluid p-5" id="servizi">
       <div
         class="d-flex flex-column h-100 justify-content-center align-items-center"
@@ -103,6 +110,7 @@
       </div>
     </section>
 
+    <!-- PARTNERS -->
     <section class="height-100vh container-fluid" id="partners">
       <div
         class="d-flex flex-column h-100 justify-content-center align-items-center"
@@ -139,6 +147,108 @@
         </div>
       </div>
     </section>
+
+    <!-- AZIENDA -->
+    <section class="height-100vh container-fluid p-5" id="azienda">
+      <div
+        class="d-flex flex-column h-100 justify-content-center align-items-center"
+      >
+        <div class="my-4 text-center">
+          <h1 class="display-4 font-weight-bold">Azienda</h1>
+          <p class="font-weight-light mt-4 paragrafo">
+            Elettrofrigo srl nasce nel 1980 a Verona, in questo tempo ha
+            maturato una grande esperienza, diventando leader nei diversi
+            settori in cui opera. Seguendo una continua e costante evoluzione
+            tecnica e tecnologica con aggiornamento del personale e delle
+            apparecchiature può proporre sempre nuove tecnologie.
+          </p>
+        </div>
+        <div class="illustrazione my-4">
+          <img
+            class="img-fluid"
+            src="./imgs/illustrations/undraw_business_shop_qw5t.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTACI -->
+    <section class="height-100vh container-fluid p-5" id="contattaci">
+      <div
+        class="d-flex flex-column h-100 justify-content-center align-items-center"
+      >
+        <div class="my-4 text-center">
+          <h1 class="display-4 font-weight-bold">Contattaci</h1>
+          <form class="mt-5">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Nome Cognome</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nome e cognome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Indirizzo email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="nome@esempio.it"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Categoria</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected="true" disabled="disabled">
+                  Seleziona categoria...
+                </option>
+                <option>Automazione industriale</option>
+                <option>Impianti elettrici</option>
+                <option>Quadri elettrici</option>
+                <option>Impianti di condizionamento</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Invia</button>
+          </form>
+        </div>
+        <!-- <div class="illustrazione my-4">
+          <img
+            class="img-fluid"
+            src="./imgs/illustrations/undraw_business_shop_qw5t.svg"
+            alt=""
+          />
+        </div> -->
+      </div>
+    </section>
+    <footer class="container-fluid text-center p-4 m-0">
+        <div class="maps mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.9498653401465!2d10.885011015821531!3d45.41035054505551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e0c377ba615b%3A0xb6ad002fb81d91ee!2sVia%20Antonio%20Pacinotti%2C%203%2C%2037066%20Caselle%20VR!5e0!3m2!1sit!2sit!4v1594213808105!5m2!1sit!2sit"
+            width="80%"
+            height="100%"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      <p class="mt-5 paragrafo text-light">
+        Elettrofrigo s.r.l. Via Pacinotti, 3 - 37066 - Caselle di Sommacampagna
+        (VR) ITALY TEL. 045/8581160 PARTITA IVA: 02932500230 -
+        tecnico@elettrofrigo.com
+      </p>
+    </footer>
   </body>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

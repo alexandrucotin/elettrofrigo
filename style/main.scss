@@ -1,3 +1,9 @@
+//COLORS
+$dark-blue: #164469;
+$yellow: #fbb03f;
+$white: white;
+$light-blue: #76949f;
+
 html {
   scroll-behavior: smooth;
 }
@@ -50,4 +56,8 @@ html {
 
 .paragrafo{
     font-size: 0.8rem;
+}
+
+footer{
+  background-color: $yellow;
 }
