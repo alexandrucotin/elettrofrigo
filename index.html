@@ -4,255 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elettrofrigo</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="shortcut icon" href="./imgs/smallLogo.png" type="image/x-icon" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
-    <!-- Video section -->
-
-    <div class="video-container" id="home">
-      <video autoplay muted loop class="video-tag" id="myVideo">
-        <source src="./video/render_draft_1.mp4" type="video/mp4" />
-      </video>
-      <div class="video-overlay" id="videoOverlay">
-        <div class="overlay-total">
-          <img src="./imgs/smallLogo.png" alt="Elettrofrigo logo piccolo" />
-          <div class="overlay-content">
-            <h4 class="overlay-title">Elettrofrigo</h4>
-            <p class="overlay-subtitle">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Veritatis itaque excepturi rerum dolorem officiis quam, nam
-              mollitia labore, dicta fugit aut! Id neque eos rem reiciendis
-              recusandae error aliquid porro.
-            </p>
-            <div class="buttons-container">
-              <a href="#servizi" class="button-link">Scopri di piu'</a>
-            </div>
-          </div>
-        </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3 shadow">
+      <a class="navbar-brand" href="#"><img class="img-logo" src="./imgs/longLogo.png" alt=""></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#servizi"> Servizi </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#partners">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Azienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatti</a>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <!-- Navbar section -->
-
-    <nav class="navbar">
-      <a href="#" class="logo-link"
-        ><img
-          class="logo"
-          src="./imgs/longLogo.png"
-          alt="logo azienda elettrofrigo"
-      /></a>
-      <ul class="links-list">
-        <li class="link-item">
-          <a class="hover hover-1" href="#home">home</a>
-        </li>
-        <li class="link-item"><a href="#servizi">servizi</a></li>
-        <li class="link-item"><a href="#partners">partners</a></li>
-        <li class="link-item"><a href="#azienda">azienda</a></li>
-        <li class="link-item"><a href="#contatti">contatti</a></li>
-      </ul>
     </nav>
 
-    <!-- Servizi section -->
-
-    <section class="servizi" id="servizi">
-      <div class="section-illustrazione">
-        <img
-          class="illustrazione illustrazione-servizi"
-          src="./imgs/illustrations/undraw_services_5tv9.svg"
-          alt=""
-        />
+    <!-- LANDINGPAGE -->
+    <section
+      class="landingpage container-fluid d-flex align-items-center p-0 m-0 position-relative"
+      id="home"
+    >
+      <video autoplay muted loop class="video" id="myVideo">
+        <source src="./video/render_draft_1.mp4" type="video/mp4" />
+      </video>
+      <div
+        class="overlay position-absolute d-flex flex-column justify-content-end align-items-start p-4 text-light"
+      >
+        <h2 class="display-5">Elettrofrigo</h2>
+        <p class="paragrafo mt-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+          architecto dolore sapiente quaerat iure nulla laborum distinctio
+          facilis maxime, corporis excepturi, magnam, ad error. Fugiat provident
+          placeat sint dolores mollitia.
+        </p>
+        <button class="btn btn-primary text-light mb-5 mt-2">Scopri di piu</button>
       </div>
-      <div class="section-contenuto">
-        <div class="servizi-text">
-          <h1 class="servizi-titolo"><span>S</span>ervizi</h1>
-          <p class="servizi-paragrafo-descrittivo">
+    </section>
+
+    <section class="height-100vh container-fluid p-5" id="servizi">
+      <div
+        class="d-flex flex-column h-100 justify-content-center align-items-center"
+      >
+        <div class="illustrazione my-4">
+          <img
+            class="img-fluid"
+            src="./imgs/illustrations/undraw_services_5tv9.svg"
+            alt=""
+          />
+        </div>
+        <div class="my-4 text-center">
+          <h1 class="display-4 font-weight-bold">Servizi</h1>
+          <p class="font-weight-light mt-4 paragrafo">
             Elettrofrigo srl progetta, sviluppa e propone soluzioni altamente
             affidabili e sempre più all’avanguardia nella realizzazione di
             Quadri Elettrici di Comando e Controllo nei seguenti settori
             Industriali
           </p>
         </div>
-        <div class="servizi-offerti">
-          <div class="round-item">
-            <div class="thumbnail automazione-industriale"></div>
-            <a href="./workpage/workpage.html">automazione industriale</a>
-          </div>
-          <div class="round-item">
-            <div class="thumbnail impianti-elettrici"></div>
-            <a href="./workpage/workpage.html">impianti elettrici</a>
-          </div>
-          <div class="round-item">
-            <div class="thumbnail quadri-elettrici"></div>
-            <a href="./workpage/workpage.html">quadri elettrici</a>
-          </div>
-          <div class="round-item">
-            <div class="thumbnail impianti-condizionamento"></div>
-            <a href="./workpage/workpage.html">impianti di condizionamento</a>
-          </div>
+        <div class="row">
+          <div class="categoria"></div>
         </div>
       </div>
     </section>
 
-    <!-- Parallax section -->
-
-    <div class="parallax-2"></div>
-
-    <!-- Qualita section -->
-
-    <section class="partners" id="partners">
-      <div class="partners-text">
-        <h1 class="partners-titolo"><span>P</span>artners</h1>
-        <p class="partners-paragrafo-descrittivo">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima sint
-          similique, alias qui eligendi exercitationem ex reiciendis atque
-          inventore dolorum dignissimos earum corporis, amet, eaque adipisci
-          possimus nemo? Repudiandae, quam.
-        </p>
-        <div class="certificazioni">
-          <h3 class="certificazioni-titolo">Certificazioni</h3>
-          <p class="certificazioni-paragrafo-descrittivo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-            aspernatur delectus.
+    <section class="height-100vh container-fluid" id="partners">
+      <div
+        class="d-flex flex-column h-100 justify-content-center align-items-center"
+      >
+        <div class="m-4 text-center">
+          <h1 class="display-4 font-weight-bold">Partners</h1>
+          <p class="font-weight-light mt-4 paragrafo">
+            Elettrofrigo srl progetta, sviluppa e propone soluzioni altamente
+            affidabili e sempre più all’avanguardia nella realizzazione di
+            Quadri Elettrici di Comando e Controllo nei seguenti settori
+            Industriali
           </p>
-          <img src="./imgs/certificazioni.jpg" alt="" />
         </div>
-      </div>
-
-      <div class="partners-logo">
-        <div class="logo-container">
-          <img class="logo" src="./imgs/partners/abb.png" alt="" />
-        </div>
-        <div class="logo-container">
-          <img class="logo" src="./imgs/partners/allen-bradley.png" alt="" />
-        </div>
-
-        <div class="logo-container">
-          <img class="logo" src="./imgs/partners/magelis.jpg" alt="" />
-        </div>
-
-        <div class="logo-container">
-          <img class="logo" src="./imgs/partners/schneider.jpg" alt="" />
-        </div>
-
-        <div class="logo-container">
-          <img class="logo" src="./imgs/partners/siemens.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Parallax section -->
-
-    <div class="parallax-1"></div>
-
-    <!-- Azienda section -->
-
-    <section class="azienda" id="azienda">
-      <div class="section-contenuto">
-        <h1 class="azienda-titolo"><span>A</span>zienda</h1>
-        <p class="azienda-paragrafo-descrittivo">
-          Elettrofrigo srl nasce nel 1980 a Verona, in questo tempo ha maturato
-          una grande esperienza, diventando leader nei diversi settori in cui
-          opera. Seguendo una continua e costante evoluzione tecnica e
-          tecnologica con aggiornamento del personale e delle apparecchiature
-          può proporre sempre nuove tecnologie.
-        </p>
-      </div>
-      <div class="section-illustrazione">
-        <img
-          class="illustrazione illustrazione-azienda"
-          src="./imgs/illustrations/undraw_business_shop_qw5t.svg"
-          alt=""
-        />
-      </div>
-    </section>
-
-    <!-- Contattaci section -->
-
-    <div class="parallax-1"></div>
-
-    <section class="contattaci" id="contatti">
-      <div class="section-illustrazione">
-        <img
-          class="illustrazione illustrazione-contatti"
-          src="./imgs/illustrations/undraw_contact_us_15o2.svg"
-          alt=""
-        />
-      </div>
-      <div class="section-contenuto">
-        <h1 class="contattaci-titolo"><span>C</span>ontattaci</h1>
-        <form action="">
-          <div class="row-form-group">
-            <div class="form-group">
-              <label>Nome e Cognome</label><input type="text" />
-            </div>
-            <div class="form-group">
-              <label>Azienda</label><input type="text" />
-            </div>
-            <div class="form-group">
-              <label>Email</label><input type="text" />
-            </div>
-            <div class="form-group">
-              <label>Sito web</label><input type="text" />
+        <div class="container-fluid">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="img" src="./imgs/partners/abb.png" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img" src="./imgs/partners/allen-bradley.png" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img" src="./imgs/partners/magelis.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img" src="./imgs/partners/schneider.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="img" src="./imgs/partners/siemens.png" alt="" />
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <label>Messaggio</label>
-            <textarea rows="10"></textarea>
-          </div>
-        </form>
-        <button type="submit">invia</button>
+        </div>
       </div>
     </section>
-
-    <!-- Footer section -->
-
-    <footer>
-      <div class="footer-content">
-        <div class="links">
-          <ul>
-            <li class="link-item">
-              <a href="#home"><span class="hover-1">home</span> </a>
-            </li>
-            <li class="link-item"><a href="#azienda">azienda</a></li>
-            <li class="link-item"><a href="#servizi">servzi</a></li>
-            <li class="link-item"><a href="#qualita">qualita'</a></li>
-            <li class="link-item"><a href="#contatti">contatti</a></li>
-            <li class="link-item"><a href="#home">F.A.Q</a></li>
-          </ul>
-        </div>
-        <div class="maps">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.9498653401465!2d10.885011015821531!3d45.41035054505551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e0c377ba615b%3A0xb6ad002fb81d91ee!2sVia%20Antonio%20Pacinotti%2C%203%2C%2037066%20Caselle%20VR!5e0!3m2!1sit!2sit!4v1594213808105!5m2!1sit!2sit"
-            width="80%"
-            height="100%"
-            frameborder="0"
-            style="border: 0;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-      </div>
-      <p class="footer-text">
-        Elettrofrigo s.r.l. Via Pacinotti, 3 - 37066 - Caselle di Sommacampagna
-        (VR) ITALY TEL. 045/8581160 PARTITA IVA: 02932500230 -
-        tecnico@elettrofrigo.com
-      </p>
-    </footer>
   </body>
-  <script src="./js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      loop: true,
+      slidesPerView: 1.5,
+      centeredSlides: true,
+    });
+  </script>
   <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
-    integrity="sha512-A98SmLRZISk4eIxQBeCm8k0jAcwN3A3lBx4hr7baoMpV1VpxcxlZIhi5fJIZN50sQ5RlCzx8yV+Voy2cR6x0aA=="
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
   ></script>
-  <script src="./js/animations.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
 </html>
