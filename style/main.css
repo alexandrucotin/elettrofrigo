@@ -61,4 +61,35 @@ footer {
 .bg-yellow {
   background-color: #fbb03f;
 }
+
+@media (min-width: 576px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landingpage .video {
+    -webkit-transform: translate(-16%, 5%);
+            transform: translate(-16%, 5%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .landingpage .video {
+    -webkit-transform: translate(0, 5%);
+            transform: translate(0, 5%);
+  }
+}
+
+@media (min-height: 1024px) {
+  html {
+    font-size: 22px;
+  }
+  .landingpage .video {
+    min-height: 100% !important;
+    -webkit-transform: translate(-29%);
+            transform: translate(-29%);
+  }
+}
 /*# sourceMappingURL=main.css.map */

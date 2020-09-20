@@ -45,8 +45,8 @@ html {
 .navbar-brand {
   height: 55px;
 
-  .img-logo{
-      height: 100%;
+  .img-logo {
+    height: 100%;
   }
 }
 
@@ -54,14 +54,48 @@ html {
   border: 0;
 }
 
-.font-size-08{
-    font-size: 0.8rem;
+.font-size-08 {
+  font-size: 0.8rem;
 }
 
-footer{
+footer {
   background-color: $yellow;
 }
 
-.bg-yellow{
+.bg-yellow {
   background-color: $yellow;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .landingpage {
+    .video {
+      transform: translate(-16%, 5%);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .landingpage {
+    .video {
+      transform: translate(0, 5%);
+    }
+  }
+}
+
+@media (min-height: 1024px) {
+  html {
+    font-size: 22px;
+  }
+  .landingpage {
+    .video {
+      min-height: 100% !important;
+      transform: translate(-29%);
+    }
+  }
 }

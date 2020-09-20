@@ -40,7 +40,7 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#home"
-              >Home <span class="sr-only">(current)</span></a
+              >Home <span class="sr-only"></span></a
             >
           </li>
           <li class="nav-item dropdown">
@@ -70,7 +70,6 @@
       <div
         class="overlay position-absolute d-flex flex-column justify-content-end align-items-start p-4 text-light"
       >
-        <h2 class="display-5">Elettrofrigo</h2>
         <p class="font-size-08 mt-2">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
           architecto dolore sapiente quaerat iure nulla laborum distinctio
@@ -84,11 +83,11 @@
     </section>
 
     <!-- SERVIZI -->
-    <section class="height-100vh container-fluid p-5" id="servizi">
+    <section class="container-fluid p-5" id="servizi">
       <div
         class="d-flex flex-column h-100 justify-content-center align-items-center"
       >
-        <div class="illustrazione my-4">
+        <div class="illustrazione my-4 col-sm-6">
           <img
             class="img-fluid"
             src="./imgs/illustrations/undraw_services_5tv9.svg"
@@ -104,8 +103,23 @@
             Industriali
           </p>
         </div>
-        <div class="row">
-          <div class="categoria"></div>
+        <div class="row justify-content-center justify-content-sm-around">
+          <a class="shadow  p-0 m-2 m-sm-3 text-dark  col-10 col-sm-5">
+            <img class="img-fluid" src="./imgs/DSC07236.jpg" alt="Card image cap">
+              <div class="font-size-08 p-3 text-center">Automazione industriale</div>
+          </a>
+          <a class="shadow p-0 m-2 m-sm-3  text-dark  col-10 col-sm-5">
+            <img class="img-fluid" src="./imgs/DSC07236.jpg" alt="Card image cap">
+              <div class="font-size-08 p-3 text-center">Impianti elettrici</div>
+          </a>
+          <a class="shadow p-0 m-2 m-sm-3  text-dark  col-10 col-sm-5">
+            <img class="img-fluid" src="./imgs/DSC07236.jpg" alt="Card image cap">
+              <div class="font-size-08 p-3 text-center">Quadri  industriale</div>
+          </a>
+          <a class="shadow p-0 m-2 m-sm-3  text-dark col-10 col-sm-5">
+            <img class="img-fluid" src="./imgs/DSC07236.jpg" alt="Card image cap">
+              <div class="font-size-08 p-3 text-center">Impianti di condizionamento</div>
+          </a>
         </div>
       </div>
     </section>
@@ -163,7 +177,7 @@
             apparecchiature può proporre sempre nuove tecnologie.
           </p>
         </div>
-        <div class="illustrazione my-4">
+        <div class="illustrazione my-4 col-sm-6">
           <img
             class="img-fluid"
             src="./imgs/illustrations/undraw_business_shop_qw5t.svg"
@@ -178,8 +192,8 @@
       <div
         class="d-flex flex-column h-100 justify-content-center align-items-center"
       >
-        <div class="my-4">
-          <h1 class="display-4 font-weight-bold">Contattaci</h1>
+      <h1 class="display-4 font-weight-bold">Contattaci</h1>
+        <div class="col-sm-8">
           <form class="mt-5 text-center">
             <div class="form-group">
               <label class="text-muted font-size-08" for="exampleFormControlInput1">Nome Cognome</label>
@@ -196,17 +210,14 @@
                 id="exampleFormControlInput1"
               />
             </div>
+            
             <div class="form-group">
-              <label class="text-muted font-size-08" for="exampleFormControlSelect1">Categoria</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option selected="true" disabled="disabled">
-                  Seleziona categoria...
-                </option>
-                <option>Automazione industriale</option>
-                <option>Impianti elettrici</option>
-                <option>Quadri elettrici</option>
-                <option>Impianti di condizionamento</option>
-              </select>
+              <label class="text-muted font-size-08" for="exampleFormControlInput1">Oggetto</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
             </div>
             <div class="form-group">
               <label class="text-muted font-size-08" for="exampleFormControlTextarea1">Messaggio</label>
@@ -241,7 +252,7 @@
             tabindex="0"
           ></iframe>
         </div>
-      <p class="mt-5 paragrafo text-light">
+      <p class="mt-5 font-size-08 text-light">
         Elettrofrigo s.r.l. Via Pacinotti, 3 - 37066 - Caselle di Sommacampagna
         (VR) ITALY TEL. 045/8581160 PARTITA IVA: 02932500230 -
         tecnico@elettrofrigo.com
