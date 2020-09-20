@@ -10,7 +10,9 @@ html {
 .navbar {
   z-index: 2;
 }
-
+.hidden{
+  display: none;
+}
 .landingpage {
   background-color: black;
   height: 100vh;
@@ -62,6 +64,9 @@ footer {
   background-color: $yellow;
 }
 
+.max-width{
+  max-width: 100%;
+}
 .bg-yellow {
   background-color: $yellow;
 }
@@ -86,6 +91,7 @@ footer {
       transform: translate(0, 5%);
     }
   }
+
 }
 
 @media (min-height: 1024px) {
@@ -96,6 +102,32 @@ footer {
     .video {
       min-height: 100% !important;
       transform: translate(-29%);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #servizi{
+    min-height: 100vh;
+  }
+  .max-width{
+    max-width: 40%;
+  }
+
+  .hidden{
+    display: unset
+  }
+}
+
+@media (min-width: 1700px) {
+  .landingpage {
+    .video {
+      min-width: 100% !important;
+      height: auto;
+    }
+
+    .font-size-15{
+      font-size: 1.2rem;
     }
   }
 }

@@ -6,6 +6,10 @@ html {
   z-index: 2;
 }
 
+.hidden {
+  display: none;
+}
+
 .landingpage {
   background-color: black;
   height: 100vh;
@@ -58,6 +62,10 @@ footer {
   background-color: #fbb03f;
 }
 
+.max-width {
+  max-width: 100%;
+}
+
 .bg-yellow {
   background-color: #fbb03f;
 }
@@ -90,6 +98,28 @@ footer {
     min-height: 100% !important;
     -webkit-transform: translate(-29%);
             transform: translate(-29%);
+  }
+}
+
+@media (min-width: 1200px) {
+  #servizi {
+    min-height: 100vh;
+  }
+  .max-width {
+    max-width: 40%;
+  }
+  .hidden {
+    display: unset;
+  }
+}
+
+@media (min-width: 1700px) {
+  .landingpage .video {
+    min-width: 100% !important;
+    height: auto;
+  }
+  .landingpage .font-size-15 {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
