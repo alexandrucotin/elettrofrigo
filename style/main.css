@@ -10,6 +10,15 @@ html {
   display: none;
 }
 
+.navbar {
+  background-color: white;
+}
+
+.navbar .nav-link {
+  color: #164469;
+  text-transform: lowercase;
+}
+
 .landingpage {
   background-color: black;
   height: 100vh;
@@ -68,6 +77,18 @@ footer {
 
 .bg-yellow {
   background-color: #fbb03f;
+}
+
+.backgroundYellow {
+  background-color: #fbb03f;
+}
+
+.backgroundYellow .titoloCategoria {
+  font-weight: 500;
+}
+
+.data {
+  font-size: 0.7rem;
 }
 
 @media (min-width: 576px) {

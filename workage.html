@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lavoro</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      class="w-100 text-center text-md-left px-md-5 py-5 backgroundYellow text-white"
+    >
+      <h1 class="py-4 titoloCategoria">Automazione industriale</h1>
+    </div>
+    <section class="p-4 p-md-5">
+      <div
+        class="lavoro my-5 d-flex flex-column flex-lg-row-reverse justify-content-lg-center align-items-lg-center"
+      >
+        <div class="lavoro-contenuto col-lg-4">
+          <h3 class="mb-0 mt-4">Lavoro</h3>
+          <div class="data text-muted">10/03/2020</div>
+          <p class="my-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            voluptate rerum, molestias possimus consequuntur, labore accusamus,
+            ipsam nobis omnis magnam doloremque ratione ad porro excepturi
+            dignissimos. Enim sunt iste voluptatibus.
+          </p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container col-md-8 col-lg-4">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07176.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07180.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07208.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07236.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev" style="color: white"></div>
+          <div class="swiper-button-next" style="color: white"></div>
+        </div>
+      </div>
+      <div
+        class="lavoro my-5 py-5 d-flex flex-column flex-lg-row justify-content-lg-center align-items-lg-center"
+      >
+        <div class="lavoro-contenuto col-lg-4">
+          <h3 class="mb-0 mt-4">Lavoro</h3>
+          <div class="data text-muted">10/03/2020</div>
+          <p class="my-4">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+            voluptate rerum, molestias possimus consequuntur, labore accusamus,
+            ipsam nobis omnis magnam doloremque ratione ad porro excepturi
+            dignissimos. Enim sunt iste voluptatibus.
+          </p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container col-md-8 col-lg-4">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07176.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07180.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07208.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./imgs/DSC07236.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev" style="color: white"></div>
+          <div class="swiper-button-next" style="color: white"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid text-center p-4 m-0">
+      <div class="maps mt-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.9498653401465!2d10.885011015821531!3d45.41035054505551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e0c377ba615b%3A0xb6ad002fb81d91ee!2sVia%20Antonio%20Pacinotti%2C%203%2C%2037066%20Caselle%20VR!5e0!3m2!1sit!2sit!4v1594213808105!5m2!1sit!2sit"
+          width="80%"
+          height="100%"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <p class="mt-5 font-size-08 text-light">
+        Elettrofrigo s.r.l. Via Pacinotti, 3 - 37066 - Caselle di Sommacampagna
+        (VR) ITALY TEL. 045/8581160 PARTITA IVA: 02932500230 -
+        tecnico@elettrofrigo.com
+      </p>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="module">
+    import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+
+    const swiper = new Swiper(".swiper-container", {
+      autoHeight: true,
+      breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+          width: 400
+        },
+      },
+    });
+  </script>
+</html>
