@@ -79,18 +79,30 @@ footer {
   background-color: #fbb03f;
 }
 
-.categoryNavItem {
-  font-size: 0.8rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid white;
-}
-
 .backgroundYellow {
   background-color: #fbb03f;
 }
 
 .backgroundYellow .titoloCategoria {
   font-weight: 500;
+}
+
+.backgroundYellow .linkArrow {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.backgroundYellow .backArrow {
+  border-radius: 50%;
+  background-color: white;
+  height: 20%;
+}
+
+.backgroundYellow .categoryNavItem {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: white;
 }
 
 .data {

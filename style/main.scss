@@ -10,13 +10,15 @@ html {
 .navbar {
   z-index: 2;
 }
-.hidden{
+.hidden {
   display: none;
 }
 
-.navbar{
+// HOMEPAGE
+
+.navbar {
   background-color: white;
-  .nav-link{
+  .nav-link {
     color: $dark-blue;
     text-transform: lowercase;
   }
@@ -72,28 +74,41 @@ footer {
   background-color: $yellow;
 }
 
-.max-width{
+.max-width {
   max-width: 100%;
 }
 .bg-yellow {
   background-color: $yellow;
 }
 
-.categoryNavItem{
-  font-size: 0.8rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid white;
-}
-
-.backgroundYellow{
+// WORKPAGE
+.backgroundYellow {
   background-color: $yellow;
 
-  .titoloCategoria{
+  .titoloCategoria {
     font-weight: 500;
+  }
+
+  .linkArrow {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  .backArrow {
+    border-radius: 50%;
+    background-color: $white;
+    height: 20%;
+  }
+
+  .categoryNavItem {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    color: white;
   }
 }
 
-.data{
+.data {
   font-size: 0.7rem;
 }
 
@@ -117,7 +132,6 @@ footer {
       transform: translate(0, 5%);
     }
   }
-
 }
 
 @media (min-height: 1024px) {
@@ -133,15 +147,15 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  #servizi{
+  #servizi {
     min-height: 100vh;
   }
-  .max-width{
+  .max-width {
     max-width: 40%;
   }
 
-  .hidden{
-    display: unset
+  .hidden {
+    display: unset;
   }
 }
 
@@ -152,7 +166,7 @@ footer {
       height: auto;
     }
 
-    .font-size-15{
+    .font-size-15 {
       font-size: 1.2rem;
     }
   }

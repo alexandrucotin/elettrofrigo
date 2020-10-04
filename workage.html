@@ -22,13 +22,21 @@
   </head>
   <body>
     <div
-      class="w-100 text-center text-md-left px-md-5 py-5 backgroundYellow text-white"
+      class="w-100 text-center text-md-left px-md-5 py-5 backgroundYellow text-white d-flex align-items-center position-relative"
     >
-      <h1 class="pt-4 titoloCategoria">Automazione industriale</h1>
-      <div class="d-flex mt-4">
-          <a class="categoryNavItem text-white" href="">Impianti elettrici</a>
-          <a class="categoryNavItem text-white mx-4" href="">Quadri industriale</a>
-          <a class="categoryNavItem text-white" href="">Impianti di condizionamento</a>
+      <a class="linkArrow" href="index.html"
+        ><img
+          class="backArrow"
+          src="./imgs/keyboard_arrow_left-white-18dp.svg"
+          alt=""
+      /></a>
+      <div class="col">
+        <h1 class="titoloCategoria">Automazione industriale</h1>
+        <div class="d-flex">
+          <a class="categoryNavItem" href="">Impianti elettrici</a>
+          <a class="categoryNavItem mx-4" href="">Quadri industriale</a>
+          <a class="categoryNavItem" href="">Impianti di condizionamento</a>
+        </div>
       </div>
     </div>
     <section class="p-4 p-md-5">
@@ -46,7 +54,7 @@
           </p>
         </div>
         <!-- Slider main container -->
-        <div class="swiper-container col-md-8 col-lg-4">
+        <div class="swiper-container col-md-8 col-lg-4 shadow">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -65,8 +73,8 @@
           </div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev" style="color: white"></div>
-          <div class="swiper-button-next" style="color: white"></div>
+          <div class="swiper-button-prev" style="color: #164469"></div>
+          <div class="swiper-button-next" style="color: #164469"></div>
         </div>
       </div>
       <div
@@ -83,7 +91,7 @@
           </p>
         </div>
         <!-- Slider main container -->
-        <div class="swiper-container col-md-8 col-lg-4">
+        <div class="swiper-container col-md-8 col-lg-4 shadow">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -102,8 +110,8 @@
           </div>
 
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev" style="color: white"></div>
-          <div class="swiper-button-next" style="color: white"></div>
+          <div class="swiper-button-prev" style="color: #164469"></div>
+          <div class="swiper-button-next" style="color: #164469"></div>
         </div>
       </div>
     </section>
@@ -133,14 +141,8 @@
 
     const swiper = new Swiper(".swiper-container", {
       autoHeight: true,
-      breakpoints: {
-        // when window width is >= 640px
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-          width: 400
-        },
-      },
+      slidesPerView: 1,
+      centeredSlides: true,
     });
   </script>
 </html>
